@@ -5,7 +5,7 @@ import {Navbar, Nav, NavItem} from 'react-bootstrap';
 class Footer extends Component {
   render() {
     return (
-      <div id="bottom">
+      <div>
       <Navbar inverse bottom collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>

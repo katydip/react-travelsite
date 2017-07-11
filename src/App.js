@@ -23,25 +23,7 @@ class App extends Component {
             <Flags country="Italy" photo="/assets/images/italy_flag.svg" link="http://www.italia.it/en/home.html" description="Italy Tourism Site" />
           </Row>
         </Grid>
-        <Table striped bordered condensed hover>
-      <thead>
-        <tr>
-          <th>Destination</th>
-          <th>Capital</th>
-          <th>Official Language</th>
-          <th>Population</th>
-          <th>National Bird</th>
-        </tr>
-      </thead>
-        <tbody>
-          <tr>
-        <TheTable country="Spain" capital="Madrid" language="Spanish" population="46.77 million" bird="Eagle" />
-        <TheTable country="Chile" capital="Santiago" language="Spanish" population="17.62 million" bird="Andean condor" />
-        <TheTable country="Aruba" capital="Oranjestad" language="Dutch" population="102,911" bird="Aruban Burrowing Owl" />
-        <TheTable country="Italy" capital="Rome" language="Italian" population="59.83 million" bird="Bluebirds" />
-          </tr>
-        </tbody>
-          </Table>
+        <TheTable />
           <Footer />
       </div>
     );
