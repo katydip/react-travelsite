@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import './Flags.css';
-import {Col} from 'react-bootstrap';
+import {Col, Grid, Row} from 'react-bootstrap';
+import FlagDisplay from './FlagDisplay';
+
 
 class Flags extends Component {
   render() {
     return (
       <div>
-        <Col sm={6} md={3}><br/><h4>{this.props.country}</h4><br/><img id="flagicon" src={this.props.photo}></img><br/><a href={this.props.link} target="_blank">{this.props.description}</a></Col>
+      <Grid id="gridstyle">
+        <Row className="show-grid">
+          <FlagDisplay country="Spain" photo="/assets/images/spain_flag.svg" link="http://www.spain.info/en_US/" description="Spain Tourism Site" />
+          <FlagDisplay country="Chile" photo="/assets/images/chile_flag.svg" link="http://chile.travel/en/" description="Chile Tourism Site" />
+          <FlagDisplay country="Aruba" photo="/assets/images/aruba_flag.svg" link="http://www.arubatourism.com/" description="Aruba Tourism Site" />
+          <FlagDisplay country="Italy" photo="/assets/images/italy_flag.svg" link="http://www.italia.it/en/home.html" description="Italy Tourism Site" />
+        </Row>
+      </Grid>
       </div>
     );
   }

@@ -2,3 +2,12 @@
   width: 100%;
   height: 100%;
 }
+
+#gridstyle {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
